@@ -1,0 +1,306 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 0.8em;
+	color: #333;
+}
+
+h1, #page-title {
+    color: #618;
+    padding: 0 0 0.25em;
+    margin: 0 0 0.6em;
+    font-weight: normal;
+}
+h1 {
+    margin-top: 0.7em;
+    padding: 0;
+    font-weight: bold;
+}
+h2, h3, h4, h5, h6 {
+    margin: 0.5em 0 0.4em;
+    padding: 0;
+    letter-spacing: 1px;
+}
+#page-title {
+	font-size: 2em;
+	border-bottom: 1px solid #bbb;
+}
+
+ul {
+    list-style: square;
+}
+li, p {
+    line-height: 141%;
+}
+a {
+    color: #808;
+    text-decoration: none;
+    background: transparent;
+}
+a:visited {
+    color: #96c;
+}
+a:hover {
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+/* 标题及顶栏的设置 */
+div#container {
+	margin: 0;
+	padding: 0;
+	background: url("body_bg.png") top left repeat-x;
+}
+#header {
+	width: 90%;
+	max-width: 980px;
+	margin: 0 auto;
+	height: 140px;
+	position: relative;
+	z-index: 10;
+	padding-bottom: 22px;
+	background: url("logo.svg") 10px 40px no-repeat;
+	background-size: 100px 100px;
+}
+#header h1 {
+	margin-left: 120px;
+	padding: 0;
+	float: left;
+	max-height: 95px;
+}
+#header h1 a {
+	display: block;
+	margin: 0;
+	padding: 70px 0 25px;
+	line-height: 0px;
+	max-height: 0;
+	color: #eee;
+	background: transparent;
+	font-size: 1.8em;
+	text-decoration: none;
+	text-shadow: 3px 3px 5px #000;
+	letter-spacing: 0.9px;
+}
+#top-bar {
+	position: inherit;
+	top: 140px;
+	right: auto;
+	width: 100%;
+	height: 21px;
+	padding: 0;
+	margin: 0 auto;
+	z-index: 20px;
+	font-size: 90%;
+}
+#top-bar ul {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#top-bar ul li {
+	border: 0;
+	position: relative;
+}
+#top-bar li {
+	margin: 0;
+	list-style: none;
+	float: left;
+	padding: 0;
+}
+#top-bar ul li a {
+	border-left: solid 1px #444;
+	border-right: solid 1px #444;
+	text-decoration: none;
+	padding: 10px 1em;
+	line-height: 1px;
+	max-height: 1px;
+	overflow: hidden;
+	text-align: center;
+	display: block;
+	margin: 0;
+	color: #fff;
+}
+#top-bar ul li a:hover {
+	background-color: #FFF;
+	text-decoration: underline;
+	color: #404;
+}
+
+/* 内容的设置 */
+#content-wrap {
+	position: relative;
+	margin: 2em auto 0;
+	max-width: 1040px;
+	height: auto;
+	padding: 0;
+}
+#main-content {
+	padding: 1em;
+	position: relative;
+}
+#page-info-break {
+	clear: both;
+	height: 1px;
+	font-size: 1px;
+}
+#footer {
+	clear: both;
+    font-size: 77%;
+    background: #444;
+    color: #bbb;
+    margin-top: 15px;
+    padding: 3px 10px;
+	overflow: hidden;
+}
+#license-area {
+	padding: 0.5em 0;
+    color: #555;
+    text-align: center;
+}
+
+/* 主页 */
+.content-panel {
+    border: solid 1px #808888;
+    border-radius: 10px;
+    background-color: #909999;
+    margin: 10px 0 15px;
+    box-shadow: 3px 3px 6px #bbb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.1);
+}
+.content-panel .panel-body {
+    padding: 5px 10px;
+    background: #f9f0ff;
+}
+.content-panel.standalone {
+    background: #fdfbfc;
+}
+.content-panel.centered {
+    text-align: center;
+}
+.content-panel.left-column {
+    float: left;
+    width: 48%;
+}
+.content-panel.right-column {
+    float: right;
+    width: 48%;
+}
+.content-panel .panel-heading {
+    padding: 2px 10px;
+    color: #fff;
+    font-size: 90%;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.35);
+}
+.content-panel .panel-heading > p,
+.content-panel .panel-footer > p {
+    margin: 0;
+}
+.content-panel .panel-body {
+    padding: 5px 10px;
+}
+.content-panel .panel-footer {
+    padding: 1px 10px;
+    color: #f0ffff;
+    font-size: 80%;
+    font-weight: bold;
+    text-align: right;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+}
+.content-panel .panel-footer a {
+    color: #fff;
+}
+.content-panel .content-toc {
+    float: right;
+    padding: 0 20px;
+    background-color: #fff;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    margin: 20px 0 5px 5px;
+    white-space: nowrap;
+    box-shadow: inset 1px 2px 6px rgba(0,0,0,.15);
+}
+
+.feature-block {
+    height: 230px;
+}
+.feature-block .feature-title {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+
+/* 菜谱一览（表格列表等） */
+
+/* 点赞框 */
+.bbbutton {
+    background-color: #000;
+    border: solid 1px #000;
+    color: #fff;
+    border-radius: 20px;
+    max-width: 150px;
+    margin: 0px auto;
+    margin-bottom: 1.25rem;
+    text-align: center;
+    box-shadow:0 2px 6px rgb(0 0 0 / 50%), inset 0 10px 20px rgb(204 204 204 / 30%), inset 0 -15px 30px rgb(48 48 48 / 50%);
+    line-height: 100%;
+    font-weight: bold;
+}
+.bbbutton a {
+    color: #fff;
+    text-decoration: none;
+	font-size: 2em;
+}
+.bbbutton a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 图片框 */
+image {
+	max-width: 100%;
+}
+.image-block {
+    border: solid 1px #666;
+    box-shadow: 0 1px 6px rgba(0,0,0,.25);
+    width: 300px;
+}
+.image-block.block-right {
+    float: right;
+    clear: right;
+    margin: 0 2em 1em 2em;
+}
+.image-block.block-left {
+    float: left;
+    clear: left;
+    margin: 0 2em 1em 0;
+}
+.image-block.block-center {
+    margin-right: auto;
+    margin-left: auto;
+}
+.image-block img {
+    border: 0;
+    width: 300px;
+}
+.image-block .image-caption {
+    background-color: #eee;
+    border-top: solid 1px #666;
+    padding: 2px 0;
+    font-size: 80%;
+    font-weight: bold;
+    text-align: center;
+    width: 300px;
+}
+.image-block > p {
+    margin: 0;
+}
+.image-block .image-caption > p {
+    margin: 0;
+    padding: 0 10px;
+}
